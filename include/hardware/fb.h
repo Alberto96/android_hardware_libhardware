@@ -63,6 +63,9 @@ typedef struct framebuffer_device_t {
 
     /* max swap interval supported by this framebuffer */
     const int       maxSwapInterval;
+   
+    const int       smem_start;
+    const int       vmem_start;
 
 #ifdef QCOM_HARDWARE
     /* number of framebuffers */
